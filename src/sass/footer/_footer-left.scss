@@ -1,0 +1,26 @@
+$color-main: #29323c;
+$font-stack: 'Open Sans', sans-serif;
+$font-text:'Montserrat', sans-serif;
+
+.footer-logo {
+  color: $color-main;
+  font-family: "Airbag", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -1.2px;
+  margin-right: 30px;
+}
+
+.copyright {
+  color: $color-main;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}

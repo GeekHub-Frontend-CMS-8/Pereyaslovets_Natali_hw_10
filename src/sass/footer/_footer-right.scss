@@ -1,0 +1,42 @@
+$color-main: #29323c;
+$font-stack: 'Open Sans', sans-serif;
+$font-text:'Montserrat', sans-serif;
+
+.footer-socials{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-right-text {
+  color: $color-main;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.social-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: $color-main;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 38px;
+  &:hover {
+    -webkit-filter: opacity(30%);
+  }
+}
+
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-text {
+  margin-right: 20px;
+}

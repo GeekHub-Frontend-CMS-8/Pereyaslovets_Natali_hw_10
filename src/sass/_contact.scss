@@ -1,0 +1,15 @@
+$color-main: #29323c;
+$color-white: #fff;
+$font-stack: 'Open Sans', sans-serif;
+$font-text:'Montserrat', sans-serif;
+
+.contact {
+   display: flex;
+   flex-direction: column;
+ }
+
+@media screen and (min-width: 880px)  {
+  .contact {
+    flex-direction: row;
+  }
+}

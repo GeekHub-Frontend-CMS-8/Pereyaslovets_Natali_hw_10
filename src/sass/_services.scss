@@ -1,0 +1,88 @@
+$color-main: #29323c;
+$font-stack: 'Open Sans', sans-serif;
+$font-text:'Montserrat', sans-serif;
+
+.services {
+  background-color: #f5f5f5;
+}
+
+h3 {
+  color: $color-main;
+  font-family: $font-text;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  padding: 40px 0 25px 0;
+}
+
+.services-text {
+  opacity: 0.8;
+  color: $color-main;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 70px;
+  line-height: 20px;
+  &:after {
+    display: block;
+    content: '';
+    width: 40px;
+    margin: 0 auto;
+    border-bottom: 1px solid $color-main;
+    opacity: 0.8;
+    padding-bottom: 15px;
+  }
+}
+
+.services-list {
+  font-size: 45px;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(71,84,98); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(71,84,98,1) 0%, rgba(43,52,62,1) 100%, rgba(71,84,97,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(71,84,98,1) 0%,rgba(43,52,62,1) 100%,rgba(71,84,97,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(71,84,98,1) 0%,rgba(43,52,62,1) 100%,rgba(71,84,97,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#475462', endColorstr='#475461',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.services-ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .services-ul {
+    flex-direction: row;
+    li {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.fa-sliders-h {
+  transform: rotate(90deg);
+}
+
+.services-list-text {
+  opacity: 0.8;
+  color: $color-main;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}

@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Airbag;
+  src: url(../fonts/AirbagFree-Regular.ttf);
+}
+
+.wrap {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 450px)  {
+  .wrap {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 480px)  {
+  .wrap {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .wrap {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .wrap {
+    width: 950px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+@import "../../node_modules/reset-css/sass/reset";
+@import "header/logo";
+@import "header/nav";
+@import "header/header-text";
+@import "header";
+@import "footer/footer-right";
+@import "footer/footer-left";
+@import "footer";
+@import "our_clients";
+@import "team";
+@import "partners";
+@import "pricing_table";
+@import "contact/map";
+@import "contact/form";
+@import "contact";
+@import "works";
+@import "services";
