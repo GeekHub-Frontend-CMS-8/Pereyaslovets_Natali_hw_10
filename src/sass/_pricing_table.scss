@@ -21,6 +21,7 @@ $margin-text-desktop:105px;
 @media screen and (min-width: 768px)  {
   .item-list {
     flex-direction: row;
+    padding-top: 10px;
   }
 }
 
@@ -35,6 +36,7 @@ $margin-text-desktop:105px;
 @media screen and (min-width: 768px)  {
   .item {
     margin-bottom: 0;
+    margin-top: 40px;
   }
 }
 
@@ -75,6 +77,9 @@ $margin-text-desktop:105px;
 
 .special-item {
   margin-bottom: 15px;
+  .month {
+    padding-bottom: 37px;
+  }
 }
 
 @media screen and (min-width: 768px)  {
@@ -123,7 +128,7 @@ $margin-text-desktop:105px;
 @media screen and (min-width: 980px)  {
   .item-text {
     line-height: 40px;
-    padding: 15px 75px;
+    padding: 15px 10px;
   }
 }
 

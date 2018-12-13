@@ -10,6 +10,11 @@ $font-text:'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: -1.2px;
   margin-right: 30px;
+  text-decoration: none;
+}
+
+.footer-logo, .copyright, .footer-right-text {
+  padding-bottom: 20px;
 }
 
 .copyright {
@@ -23,4 +28,14 @@ $font-text:'Montserrat', sans-serif;
 .footer-left {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-left {
+    flex-direction: row;
+  }
+  .footer-logo, .copyright, .footer-right-text {
+    padding-bottom: 0;
+  }
 }

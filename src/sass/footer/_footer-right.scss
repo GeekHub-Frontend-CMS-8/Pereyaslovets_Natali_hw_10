@@ -35,6 +35,14 @@ $font-text:'Montserrat', sans-serif;
 .footer-right {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-right {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .footer-right-text {
