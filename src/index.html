@@ -1,565 +1,304 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link type="text/css" rel="StyleSheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>homework-9</title>
+    <title>homework-10</title>
 </head>
 
 <body>
-<header>
+<header class="header">
     <div class="wrap">
-        <div class="nav-list">
-            <div class="logo">
+        <div class="container header__container">
+            <div class="header__logo">
                 <a href="#">
-                    Zet
+                    acrostia
                 </a>
             </div>
-            <nav id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+            <div class="header__menu menu">
+                <div class="topnav" id="openMenu">
+                    <span class="topnav__item topnav__item--top"></span>
+                    <span class="topnav__item topnav__item--middle"></span>
+                    <span class="topnav__item topnav__item--bottom"></span>
                 </div>
-            </nav>
-            <span class="btn-home" onclick="openNav()">Menu &#9776;</span>
+                <nav class="menu-list menu__menu-list">
+                    <ul class="menu-list__links">
+                        <li class="menu-list__item"><a href="/" class="link menu-list__link">Home</a></li>
+                        <li class="menu-list__item"><a href="services.html" class="link menu-list__link">Services</a></li>
+                        <li class="menu-list__item"><a href="about.html" class="link menu-list__link">About</a></li>
+                        <li class="menu-list__item"><a href="work.html" class="link menu-list__link">Work</a></li>
+                        <li class="menu-list__item"><a href="contact.html" class="link menu-list__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="header-text">
-            <h1>Something Nothing
-            </h1>
-            <p>Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
-                iam ultricies nisi eleifend tellus.
-            </p>
-            <button name="button" class="header-text____button">Let’s talk</button>
-            <a class="arrow">
-                <i class="fas-header fas fa-chevron-down"></i>
-            </a>
-        </div>
+
+            <div id="slider" class="slider">
+                <ol class="slider__indicators">
+                    <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                    <li class="slider__indicator" data-slide-to="1"></li>
+                    <li class="slider__indicator" data-slide-to="2"></li>
+                    <li class="slider__indicator" data-slide-to="3"></li>
+                </ol>
+                <div class="slider__items">
+                    <div class="slider__item slider__item_1 slider__item_active">
+                        <div class="slider__item_inner">
+                            <div class="hero">
+                                <p class="hero-content"><span class="header-desc-up">Good ideas</span> comes
+                                </p>
+                                <h1 class="headline hero-content__headline">First!
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item slider__item_2">
+                        <div class="slider__item_inner">
+                            <div class="header-text">
+                                <p class="header-desc"><span class="header-desc-up">Good ideas</span> comes
+                                </p>
+                                <h1>First!
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item slider__item_3">
+                        <div class="slider__item_inner">
+                            <div class="header-text">
+                                <p class="header-desc"><span class="header-desc-up">Good ideas</span> comes
+                                </p>
+                                <h1>First!
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__item slider__item_4 ">
+                        <div class="slider__item_inner">
+                            <div class="header-text">
+                                <p class="header-desc"><span class="header-desc-up">Good ideas</span> comes
+                                </p>
+                                <h1>First!
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+            </div>
     </div>
 </header>
-<section class="services">
-    <div class="wrap">
-        <h2>
-            Services
-        </h2>
-        <p class="services-text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-        </p>
-        <ul class="services-ul">
-            <li>
-                <div class="services-list">
-                    <i class="fas fa-laptop"></i>
-                </div>
-                <h3>Fully responsive
-                </h3>
-                <p class="services-list-text">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                    Phasellus viverra nulla ut metus varius laoreet.
-                </p>
-            </li>
-            <li>
-                <div class="services-list">
-                    <i class="fas fa-sliders-h"></i>
-                </div>
-                <h3>Easy customise</h3>
-                <p class="services-list-text">
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                    imperdiet a, venenatis vitae.
-                </p>
-            </li>
-            <li>
-                <div class="services-list">
-                    <i class="far fa-map"></i>
-                </div>
-                <h3>Seo ready</h3>
-                <p class="services-list-text">
-                    Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-                    semper nisi
-                </p>
-            </li>
-            <li>
-                <div class="services-list">
-                    <i class="far fa-heart"></i>
-                </div>
-                <h3>Made with love</h3>
-                <p class="services-list-text">
-                    ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero. vulputate eget, arcu.
-                </p>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="works">
-    <div class="wrap">
-        <h2>
-            Works
-        </h2>
-        <p class="works-text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-        </p>
-    </div>
-    <ul class="works-img">
-        <li class=" holder smooth">
-            <img src="img/thumb-1.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-2.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-3.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-4.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-5.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-6.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-7.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-8.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-9.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-10.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-11.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-12.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-13.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-14.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-        <li class=" holder smooth">
-            <img src="img/thumb-15.png" alt="" class="thumb">
-            <div class="go-top">
-                <p class="hover-text-up">Booming shop</p>
-                <p class="hover-text-dw">Website Development</p>
-            </div>
-        </li>
-    </ul>
-</section>
-<section class="our_clients">
-    <div class="wrap">
-        <h2>Happy clients</h2>
-        <p class="clients-text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-        </p>
-        <p class="clients-about"> Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang;
-            lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa
-            Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem
-            nedhi gesang manah cangkem: nem aken benter bebucal baita dangu
-        </p>
-        <div class="client-ava">
-            <img src="img/adam.png" alt="">
-            <h3>Vasily Nganu
-            </h3>
-            <span class="prof-clients">Dropbox Senior Developer</span>
-        </div>
-    </div>
-</section>
-<section class="team">
-    <div class="wrap">
-        <h2 class="h2-team">Our professional team</h2>
-        <p class="text-team">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-        </p>
-        <div class="all-profiles">
-            <div class="profile">
-                <div class="pic">
-                    <img src="img/salazar.png" alt="" class="photo-profile">
-                    <span class="pic-caption bottom-to-top">
-                            <p class="pic-title">Read his bio</p>
-		                </span >
-                </div>
-                <div class="info-profile">
-                    <h4>Salazar Slytherin
-                    </h4>
-                    <span class="prof">CEO</span>
-                    <ul class="socials">
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-vimeo-v"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fas fa-basketball-ball"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile-envelope">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="pic">
-                    <img src="img/gryffindor.png" alt="" class="photo-profile">
-                    <span class="pic-caption bottom-to-top">
-                            <p class="pic-title">Read his bio</p>
-		                </span >
-                </div>
-                <div class="info-profile">
-                    <h4>GodricT Gryffindor
-                    </h4>
-                    <span class="prof">Lead Developer</span>
-                    <ul class="socials">
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-vimeo-v"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fas fa-basketball-ball"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile-envelope">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="pic">
-                    <img src="img/ravenclaw.png" alt="" class="photo-profile">
-                    <span class="pic-caption bottom-to-top">
-                            <p class="pic-title">Read his bio</p>
-		                </span >
-                </div>
-                <div class="info-profile">
-                    <h4>Rowena Ravenclaw
-                    </h4>
-                    <span class="prof">Lead Designer</span>
-                    <ul class="socials">
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-vimeo-v"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fas fa-basketball-ball"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile-envelope">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="pic">
-                    <img src="img/hufflepuff.png" alt="" class="photo-profile">
-                    <span class="pic-caption bottom-to-top">
-                            <p class="pic-title">Read his bio</p>
-		                </span >
-                </div>
-                <div class="info-profile">
-                    <h4>Helga Hufflepuff
-                    </h4>
-                    <span class="prof">Marketing</span>
-                    <ul class="socials">
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fab fa-vimeo-v"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile">
-                                <i class="fas fa-basketball-ball"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-profile-envelope">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <button name="button" class="team-text____button">Meet our full team</button>
-    </div>
-</section>
-<div class="partners">
-    <div class="wrap">
-        <ul class="partners-ul">
-            <li>
-                <a href="#">
-                    <img src="img/coca-cola_logo.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/dropbox_logo.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/intel_logo.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/zendesk_logo.png" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/nokia_logo.png" alt="">
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
 
-<section class="pricing_table">
-    <div class="wrap">
-        <h2>Pricing table
-        </h2>
-        <p class="pricing-text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-        </p>
-        <div class="item-list">
-            <div class="item">
-                <div class="item-top">
-                    <span class="pack">Standard Pack</span>
-                    <span class="price">$50</span>
-                    <span class="month">Per month</span>
-                </div>
-                <div class="item-bottom">
-                    <p class="item-text">exercitation ullaborum sed do eiusmod tempor incididunt ut  quis nostrud
-                        exercitation ullamco laboris
-                    </p>
-                    <button name="button" class="btn-price">Sing up</button>
-                </div>
-            </div>
-            <div class="special-item">
-                <div class="item-top">
-                    <span class="pack">Best Pack</span>
-                    <span class="price">$100</span>
-                    <span class="month">Per month</span>
-                </div>
-                <p class="item-text">eiusmod tempor incididunt ut  quis nostrud exercitation ullamco laboris
-                    minim aliqua labore dolore
-                    nostrud laboris ullamco incididunt quis
-                </p>
-                <button name="button" class="btn-price">Sing up</button>
-            </div>
-            <div class="item">
-                <div class="item-top">
-                    <span class="pack">VIP Pack</span>
-                    <span class="price">$250</span>
-                    <span class="month">Per month</span>
-                </div>
-                <p class="item-text">incididunt ut labore et dolore  magna aliqua Ut enim ad minim veniam quis
-                    nostrud exercitation ullaborum sed do eiusmod tempor incididunt ut quis nostrud exercitation
-                    ullamco laboris
-                </p>
-                <button name="button" class="btn-price">Sing up</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="contact">
-    <div id="map"></div>
-    <!--сменить координаты на Джакарту-->
-    <script>
-        function initMap() {
-            var uluru = {lat: -25.344, lng: 131.036};
-            var map = new google.maps.Map(
-                document.getElementById('map'), {zoom: 4, center: uluru});
-
-            image = 'img/marker.png',
-                marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map,
-                    icon: image,
-                    animation: google.maps.Animation.BOUNCE
-                })
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGlLi-IL8IVBwo1UZLF-xHFr0n8UUukmE&callback=initMap">
-    </script>
-    <div class="form">
-        <form class="forms" action="index.html" method="post">
-            <ul>
-                <li>
-                    <span class="fl-name">Name</span>
-                    <input type="text" name="name" class="user" placeholder="Name">
-                </li>
-                <li>
-                    <span class="fl-email">Email</span>
-                    <input type="email" name="e-mail" class="user-mail" placeholder="Email">
-                </li>
-                <li>
-                    <span class="fl-phone">Phone</span>
-                    <input type="text" name="phone" class="user-phone" placeholder="Phone">
-                </li>
-            </ul>
-            <div class="message-block">
-                <span class="fl-message">Message</span>
-                <textarea name="text" class="message" placeholder="Message"></textarea>
-            </div>
-            <div class="btn-block">
-                <input type="submit" name="send" value="Send" class="btn-send" size="4" id="sub"/>
-            </div>
-        </form>
-    </div>
-</div>
 <footer>
     <div class="wrap">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <a href="#" class="footer-logo">
-                    Zet
-                </a>
-                <p class="copyright">&copy Copyright 2015. Allright Reserved</p>
-            </div>
-            <div class="footer-right">
-                <p class="footer-right-text">Stay In Touch</p>
-                <ul class="footer-socials">
-                    <li>
-                        <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-                    </li>
-                    <li>
-                        <a href="" class="social-icon"><i class="fas fa-basketball-ball"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <ul class="footer-socials">
+                <li>
+                    <a href="" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+<script>$(document).on('click', '#openMenu', function () {
+    $(this).toggleClass('active');
+    $('.menu-list').toggleClass('open');
+});
+
+$(document).on('touchstart' && 'touchend', function (e) {
+    var container = $(".header__menu");
+    if (container.has(e.target).length === 0) {
+        $('#openMenu').removeClass('active');
+        $('.menu-list').removeClass('open');
+    }
+});</script>
+
 <script>
-    function openNav() {
-        document.getElementById("myNav").style.height = "50%";
-    }
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
+    'use strict';
+    var slider = (function (config) {
+
+        const ClassName = {
+            INDICATOR_ACTIVE: 'slider__indicator_active',
+            ITEM: 'slider__item',
+            ITEM_LEFT: 'slider__item_left',
+            ITEM_RIGHT: 'slider__item_right',
+            ITEM_PREV: 'slider__item_prev',
+            ITEM_NEXT: 'slider__item_next',
+            ITEM_ACTIVE: 'slider__item_active'
+        }
+
+        var
+            _isSliding = false,
+            _interval = 0,
+            _transitionDuration = 700,
+            _slider = {},
+            _items = {},
+            _sliderIndicators = {},
+            _config = {
+                selector: '',
+                isCycling: true,
+                direction: 'next',
+                interval: 5000,
+                pause: true
+            };
+
+        var
+            _getItemIndex = function (_currentItem) {
+                var result;
+                _items.forEach(function (item, index) {
+                    if (item === _currentItem) {
+                        result = index;
+                    }
+                });
+                return result;
+            },
+            _setActiveIndicator = function (_activeIndex, _targetIndex) {
+                if (_sliderIndicators.length !== _items.length) {
+                    return;
+                }
+                _sliderIndicators[_activeIndex].classList.remove(ClassName.INDICATOR_ACTIVE);
+                _sliderIndicators[_targetIndex].classList.add(ClassName.INDICATOR_ACTIVE);
+            },
+            _slide = function (direction, activeItemIndex, targetItemIndex) {
+                var
+                    directionalClassName = ClassName.ITEM_RIGHT,
+                    orderClassName = ClassName.ITEM_PREV,
+                    activeItem = _items[activeItemIndex],
+                    targetItem = _items[targetItemIndex];
+
+                var _slideEndTransition = function () {
+                    activeItem.classList.remove(ClassName.ITEM_ACTIVE);
+                    activeItem.classList.remove(directionalClassName);
+                    targetItem.classList.remove(orderClassName);
+                    targetItem.classList.remove(directionalClassName);
+                    targetItem.classList.add(ClassName.ITEM_ACTIVE);
+                    window.setTimeout(function () {
+                        if (_config.isCycling) {
+                            clearInterval(_interval);
+                            _cycle();
+                        }
+                        _isSliding = false;
+                        activeItem.removeEventListener('transitionend', _slideEndTransition);
+                    }, _transitionDuration);
+                };
+
+                if (_isSliding) {
+                    return;
+                }
+                _isSliding = true;
+
+                if (direction === "next") {
+                    directionalClassName = ClassName.ITEM_LEFT;
+                    orderClassName = ClassName.ITEM_NEXT;
+                }
+
+                targetItem.classList.add(orderClassName);
+                _setActiveIndicator(activeItemIndex, targetItemIndex);
+
+                window.setTimeout(function () {
+                    targetItem.classList.add(directionalClassName);
+                    activeItem.classList.add(directionalClassName);
+                    activeItem.addEventListener('transitionend', _slideEndTransition);
+                }, 0);
+
+            },
+            _slideTo = function (direction) {
+                var
+                    activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE), // текущий элемент
+                    activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента
+                    lastItemIndex = _items.length - 1, // индекс последнего элемента
+                    targetItemIndex = activeItemIndex === 0 ? lastItemIndex : activeItemIndex - 1;
+                if (direction === "next") { // определяем индекс следующего слайда в зависимости от направления
+                    targetItemIndex = activeItemIndex == lastItemIndex ? 0 : activeItemIndex + 1;
+                }
+                _slide(direction, activeItemIndex, targetItemIndex);
+            },
+            _cycle = function () {
+                if (_config.isCycling) {
+                    _interval = window.setInterval(function () {
+                        _slideTo(_config.direction);
+                    }, _config.interval);
+                }
+            },
+            _actionClick = function (e) {
+                var
+                    activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE),
+                    activeItemIndex = _getItemIndex(activeItem),
+                    targetItemIndex = e.target.getAttribute('data-slide-to');
+
+                if (!(e.target.hasAttribute('data-slide-to') || e.target.classList.contains('slider__control'))) {
+                    return;
+                }
+                if (e.target.hasAttribute('data-slide-to')) {
+                    if (activeItemIndex === targetItemIndex) {
+                        return;
+                    }
+                    _slide((targetItemIndex > activeItemIndex) ? 'next' : 'prev', activeItemIndex, targetItemIndex);
+                } else {
+                    e.preventDefault();
+                    _slideTo(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+                }
+            },
+            _setupListeners = function () {
+                _slider.addEventListener('click', _actionClick);
+                if (_config.pause && _config.isCycling) {
+                    _slider.addEventListener('mouseenter', function (e) {
+                        clearInterval(_interval);
+                    });
+                    _slider.addEventListener('mouseleave', function (e) {
+                        clearInterval(_interval);
+                        _cycle();
+                    });
+                }
+            };
+
+        // init (инициализация слайдера)
+        for (var key in config) {
+            if (key in _config) {
+                _config[key] = config[key];
+            }
+        }
+        _slider = (typeof _config.selector === 'string' ? document.querySelector(_config.selector) : _config.selector);
+        _items = _slider.querySelectorAll('.' + ClassName.ITEM);
+        _sliderIndicators = _slider.querySelectorAll('[data-slide-to]');
+
+        _cycle();
+        _setupListeners();
+
+        return {
+            next: function () {
+                _slideTo('next');
+            },
+            prev: function () {
+                _slideTo('prev');
+            },
+            stop: function () {
+                clearInterval(_interval);
+            },
+            cycle: function () { // метод cycle
+                clearInterval(_interval);
+                _cycle();
+            }
+        }
+    }({
+        selector: '.slider',
+        isCycling: false,
+        direction: 'next',
+        interval: 5000,
+        pause: true
+    }));
 </script>
+
 </body>
 </html>
