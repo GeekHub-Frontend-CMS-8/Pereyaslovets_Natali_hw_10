@@ -1,3 +1,19 @@
+@media screen and (min-width: 900px) {
+  .menu-services {
+    display: flex;
+    li {
+      display: inline;
+      padding: 25px 20px 15px 25px;
+      &:hover {
+        padding: 25px 20px 15px 25px;
+        background-color: #df5c64;
+        border-radius: 5%;
+        margin-top: -2px;
+      }
+    }
+  }
+}
+
 .services {
   background: url("../img/services_bg.png") no-repeat center top/cover;
   padding-bottom: 110px;
@@ -7,19 +23,6 @@
   text-align: center;
 }
 
-.menu-services {
-  display: flex;
-  li {
-    display: inline;
-    padding: 25px 20px 15px 25px;
-    &:hover {
-      padding: 25px 20px 15px 25px;
-      background-color: #df5c64;
-      border-radius: 5%;
-      margin-top: -2px;
-    }
-  }
-}
 
 h2 {
   color: #fff;
@@ -69,17 +72,29 @@ h3 {
   padding-bottom: 120px;
 }
 
-.circle {
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
-  font-size: 70px;
-  color: #c45158;
-}
-
 .services-list {
   display: flex;
   flex-direction: column;
+  &__item {
+    background-color: #c8535a;
+    opacity: 0.8;
+    margin: 0 0 15px 0;
+    padding: 40px 20px;
+  }
+  &__circle {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 70px;
+    color: #c45158;
+  }
+  &__desc {
+    color: #fefefe;
+    font-family: $font-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -90,23 +105,8 @@ h3 {
   }
 }
 
-.item-desc {
-  color: #fefefe;
-  font-family: $font-text;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.services-list-item {
-  background-color: #c8535a;
-  opacity: 0.8;
-  margin: 0 0 15px 0;
-  padding: 40px 20px;
-}
-
 @media screen and (min-width: 768px) {
-  .services-list-item {
+  .services-list__item {
     margin: 0 10px 15px 0;
     flex-basis: 30%;
   }
@@ -115,9 +115,11 @@ h3 {
 @media screen and (min-width: 1024px) {
   .services-list {
     flex-wrap: nowrap;
-  }
-  .services-list-item {
-    margin: 0 20px 15px 0;
-    flex-basis: 25%;
+    &__item {
+      margin: 0 20px 15px 0;
+      flex-basis: 25%;
+    }
   }
 }
+
+
