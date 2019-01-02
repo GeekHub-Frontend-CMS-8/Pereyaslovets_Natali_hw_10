@@ -80,12 +80,22 @@ h3 {
     opacity: 0.8;
     margin: 0 0 15px 0;
     padding: 40px 20px;
+    &--in {
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid #c45158;
+    }
+    &--out {
+      width: 140px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin: 0 auto;
+    }
   }
   &__circle {
     display: block;
     margin: 0 auto;
-    padding: 20px;
-    font-size: 70px;
+    padding: 25px;
     color: #c45158;
   }
   &__desc {

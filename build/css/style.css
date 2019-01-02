@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -125,7 +124,6 @@ h1 {
       display: inline;
       padding: 25px 20px 15px 25px; }
       .menu li:hover {
-        padding: 25px 20px 15px 25px;
         background-color: #74c7d5;
         border-radius: 5%;
         margin-top: -2px; } }
@@ -579,11 +577,19 @@ h3 {
     opacity: 0.8;
     margin: 0 0 15px 0;
     padding: 40px 20px; }
+    .services-list__item--in {
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid #c45158; }
+    .services-list__item--out {
+      width: 140px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin: 0 auto; }
   .services-list__circle {
     display: block;
     margin: 0 auto;
-    padding: 20px;
-    font-size: 70px;
+    padding: 25px;
     color: #c45158; }
   .services-list__desc {
     color: #fefefe;
@@ -750,8 +756,7 @@ h3 {
 .about-list__item:hover .about-list__desc {
   color: #ff8973; }
 
-/* Пока криво работает
-.about-list__item:hover .social-user__icon .fa-facebook-f {
+.about-list__item:hover .social-user__icon--facebook {
   background-color: #4f689e;
   display: block;
   color: #fff;
@@ -761,11 +766,9 @@ h3 {
   width: 30px;
   height: 30px;
   text-align: center;
-  margin-right: 10px;
-  padding: 8px;
-}
+  margin-right: 10px; }
 
-.about-list__item:hover .fa-twitter {
+.about-list__item:hover .social-user__icon--twitter {
   background-color: #74c7d5;
   display: block;
   color: #fff;
@@ -776,10 +779,9 @@ h3 {
   height: 30px;
   text-align: center;
   margin-right: 10px;
-  padding: 8px;
-}
+  padding: 8px; }
 
-.about-list__item:hover .fa-google-plus-g{
+.about-list__item:hover .social-user__icon--google {
   background-color: #df5c64;
   display: block;
   color: #fff;
@@ -790,10 +792,9 @@ h3 {
   height: 30px;
   text-align: center;
   margin-right: 10px;
-  padding: 8px;
-}
+  padding: 8px; }
 
-.about-list__item:hover .fa-linkedin-in{
+.about-list__item:hover .social-user__icon--linkedin {
   background-color: #3e61af;
   border-radius: 50%;
   position: static;
@@ -801,9 +802,8 @@ h3 {
   height: 30px;
   text-align: center;
   margin-right: 10px;
-  padding: 8px;
-}
-*/
+  padding: 8px; }
+
 .works {
   background: url("../img/work_bg.png") no-repeat center top/cover;
   padding-bottom: 110px;
@@ -848,9 +848,9 @@ h3 {
 .filter-link {
   text-decoration: none;
   margin-right: 30px;
-  color: #fff; }
+  color: #fff;
+  padding: 10px; }
   .filter-link:hover {
-    padding: 10px;
     background-color: #f5c149;
     border-radius: 5px; }
 
@@ -902,6 +902,7 @@ h3 {
   left: 50%;
   margin-left: -19px; }
 
+/*
 .thumb-caption {
   cursor: default;
   position: absolute;
@@ -914,36 +915,44 @@ h3 {
   filter: alpha(opacity=0);
   -moz-opacity: 0;
   -khtml-opacity: 0;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .work-list__item--img:hover .thumb-image {
   -webkit-transform: scale(1);
-  transform: scale(1); }
+  transform: scale(1);
+}
 
 .thumb-title {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+}
 
 a:hover, .work-list__item--img .work-img-image, .thumb-caption, .work-list__item--thumb:hover .thumb-caption, .work-list__item--thumb:hover img {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+}
 
 .work-list__item--img:hover .bottom-to-top {
   -ms-filter: "alpha(opacity=($opacity * 100))";
   filter: alpha(opacity=100);
   -moz-opacity: 1;
   -khtml-opacity: 1;
-  opacity: 1; }
+  opacity: 1;
+}
 
 .bottom-to-top {
   top: 50%;
-  left: 0; }
+  left: 0;
+}
 
 .work-list__item--img:hover .bottom-to-top {
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
+*/
 .contact {
   background: url("../img/contact_bg.png") no-repeat center top/cover;
   padding-bottom: 110px;

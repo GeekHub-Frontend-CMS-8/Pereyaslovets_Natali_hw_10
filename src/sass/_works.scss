@@ -53,8 +53,8 @@
   text-decoration: none;
   margin-right: 30px;
   color: #fff;
+  padding: 10px;
   &:hover {
-    padding: 10px;
     background-color: #f5c149;
     border-radius: 5px;
   }
@@ -114,6 +114,7 @@
   margin-left: -19px;
 }
 
+/*
 .thumb-caption {
   cursor: default;
   position: absolute;
@@ -162,3 +163,5 @@ a:hover, .work-list__item--img .work-img-image, .thumb-caption, .work-list__item
   top: 0;
   left: 0;
 }
+
+*/

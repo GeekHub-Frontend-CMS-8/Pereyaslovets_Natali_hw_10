@@ -165,8 +165,7 @@
   color: #ff8973;
 }
 
-/* Пока криво работает
-.about-list__item:hover .social-user__icon .fa-facebook-f {
+.about-list__item:hover .social-user__icon--facebook {
   background-color: #4f689e;
   display: block;
   color: #fff;
@@ -177,10 +176,9 @@
   height: 30px;
   text-align: center;
   margin-right: 10px;
-  padding: 8px;
 }
 
-.about-list__item:hover .fa-twitter {
+.about-list__item:hover .social-user__icon--twitter {
   background-color: #74c7d5;
   display: block;
   color: #fff;
@@ -194,7 +192,7 @@
   padding: 8px;
 }
 
-.about-list__item:hover .fa-google-plus-g{
+.about-list__item:hover .social-user__icon--google{
   background-color: #df5c64;
   display: block;
   color: #fff;
@@ -208,7 +206,7 @@
   padding: 8px;
 }
 
-.about-list__item:hover .fa-linkedin-in{
+.about-list__item:hover .social-user__icon--linkedin{
   background-color: #3e61af;
   border-radius: 50%;
   position: static;
@@ -218,6 +216,5 @@
   margin-right: 10px;
   padding: 8px;
 }
-*/
 
 
